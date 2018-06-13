@@ -1,0 +1,12 @@
+<% include ./partials/header.ejs %>
+    <h3>These are my skills.</h3>
+    <ul>
+    <% skills.forEach(function(skill) {%>
+    <li><%= skill.name %> at a level of <%= skill.level %></li>
+    <% }); %>
+  </ul>
+  <div class="">
+    <a href="/new">Link to Skills Form!</a>
+    <a href="/">Link to Home!</a>
+  </div>
+<% include ./partials/footer.ejs %>
